@@ -1,0 +1,36 @@
+@import '../../../styles/settings.module.scss';
+
+.container {
+    min-height: 84vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .titleContent {
+        width: 100%;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            font-size: 2.5rem;
+            font-family: sans-serif;
+            color: $primary-color;
+        }
+
+        .addTaskBtn {
+            font-size: 1.1rem;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: #fff;
+            cursor: pointer;
+            transition: .5s;
+        }
+    }
+}

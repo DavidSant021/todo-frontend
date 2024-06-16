@@ -1,0 +1,14 @@
+@import '../../../styles/settings.module.scss';
+
+.container {
+    min-height: 84vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    h1 {
+        font-size: 2rem;
+        color: $primary-color;
+    }
+}

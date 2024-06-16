@@ -1,0 +1,79 @@
+@import '../../styles/settings.module.scss';
+
+.tasksContent {
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: flex-start;
+
+    .taskContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 3px solid $primary-color;
+        border-radius: 15px;
+        padding: 15px;
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        .checked {
+            color: rgb(17, 92, 17);
+        }
+        .unchecked {
+            color: rgb(163, 55, 55);
+        }
+
+        .taskController {
+            display: flex;
+            align-items: center;
+            column-gap: 80px;
+
+            .inputCheckTask {
+                height: 20px;
+                width: 20px;
+                cursor: pointer;
+            }
+
+            .deleteBtn {
+                border: none;
+                background-color: transparent;
+                color: rgb(228, 24, 24);
+                font-size: 1.4rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.loadingContent {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loading {
+        width: 60px;
+        height: 60px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 12px solid $primary-color;
+        border-right: 12px solid transparent;
+
+        animation: loading .5s ease-in-out infinite;
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

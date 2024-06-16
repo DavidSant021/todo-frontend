@@ -1,0 +1,36 @@
+@import '../../styles/settings.module.scss';
+
+.header {
+    background-color: $primary-color;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+
+    .homeBtn {
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        transition: .5s;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
+
+.navArea {
+    list-style: none;
+
+    .linkBtn {
+        text-decoration: none;
+        color: #fff;
+        transition: .5s;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}
